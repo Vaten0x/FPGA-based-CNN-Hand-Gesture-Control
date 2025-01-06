@@ -1,20 +1,25 @@
-from gpiozero import Servo
-from gpiozero.pins.pigpio import PiGPIOFactory
 import time
+from board import SCL, SDA
+import busio
+from adafruit_pca9685 import PCA9685
 
-factory = PiGPIOFactory()
-servo_pins = [18, 19, 20, 21, 22, 23]
-servos = [(pin, Servo(pin, pin_factory=factory)) for pin in servo_pins]
+# Set up I2C communication
+i2c = busio.I2C(SCL, SDA)
 
-try:
-    while True:
-        for pin, servo in servos:
-            print(f"Moving servo on pin {pin} to -1")
-            servo.value = -1
-            time.sleep(3)
-            print(f"Moving servo on pin {pin} to 1")
-            servo.value = 1
-            time.sleep(3)
-except KeyboardInterrupt:
-    for pin, servo in servos:
-        servo.value = None
+# Set up the PCA9685 driver
+pca = PCA9685(i2c)
+pca.frequency = 50  # Standard frequency for servos
+
+# Control servo on channel 0
+servo_channel = pca.channels[0]
+
+# Move the servo to different positions
+servo_channel.duty_cycle = 0x1999  # 0° position
+time.sleep(1)
+servo_channel.duty_cycle = 0x7FFF  # 90° position
+time.sleep(1)
+servo_channel.duty_cycle = 0xE665  # 180° position
+time.sleep(1)
+
+# Turn off the servo
+servo_channel.duty_cycle = 0
