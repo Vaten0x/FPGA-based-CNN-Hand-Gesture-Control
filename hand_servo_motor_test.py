@@ -34,8 +34,8 @@ try:
     }
 
     # Gradually move servo from 90° to 0° for each finger pinky to thumb
-    for finger, channel in fingers:
-        servo_channel = pca.channels[fingers[channel]]
+    for finger, channel in fingers.items():
+        servo_channel = pca.channels[channel]
         print("Starting servo movement from 90° to 0° with 0.2-second delay... for the " + finger + " finger")
     
         for angle in range(90, -1, -1):  # Loop from 90° to 0°
