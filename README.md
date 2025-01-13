@@ -4,6 +4,10 @@
 
 This project involves building and programming an **InMoov robotic hand and forearm** controlled by servo motors, utilizing a **Raspberry Pi 4**. The robotic hand mimics human hand movements captured through a **camera** using **OpenCV**. This README provides an overview of the project's progress, functionality, and implementation details.
 
+### Final Product Video
+
+TODO: Put video here
+
 ## Features
 
 - **Servo Motor Control:** The robotic hand is powered by servo motors controlled through the PCA9685 driver.
@@ -31,6 +35,17 @@ This project involves building and programming an **InMoov robotic hand and fore
 
 ![circuit_diagram](images/circuit_diagram.jpg)
 
+## Demonstration
+
+### Images
+
+![3d Printed Parts](images/image1.jpg)
+![Assembling in process](images/image2.jpg)
+![Soldering for sensor on fingertip](images/image3.jpg)
+![Final Product](images/image4.jpg)
+
+# For more images and videos of the project's development and my trials and error with hardware/software :sweat_smile:, [click here!](images/README.md).
+
 ## How to Run
 
 1. **Set up hardware:**
@@ -46,21 +61,6 @@ This project involves building and programming an **InMoov robotic hand and fore
    python hand_tracking_control.py
    ```
 
-## Demonstration
-
-### Images
-
-![3d Printed Parts](images/image1.jpg)
-![Assembling in process](images/image2.jpg)
-![Soldering for sensor on fingertip](images/image3.jpg)
-![Final Product](images/image4.jpg)
-
-For more images and videos of the project's development, [click here](images/README.md).
-
-### Video
-
-[Link to Demonstration Video](https://your.video.link)
-
 ## Future Improvements
 
 - **Haptic Feedback**: Add feedback to gloves and make it control the robotic hand
@@ -69,7 +69,7 @@ For more images and videos of the project's development, [click here](images/REA
 
 ## Acknowledgments
 
-- Special thanks to the members of the [InMoov Discord Server](https://discord.gg/FKJ6GSEwHr) for their invaluable guidance and support throughout the project. Especially to hairygael who is the admin of the server and the creator of the InMoov project.
+Special thanks to the members of the [InMoov Discord Server](https://discord.gg/FKJ6GSEwHr) for their invaluable guidance and support throughout the project. Especially to hairygael who is the admin of the server and the creator of the InMoov project.
 
 ## License
 
