@@ -44,22 +44,30 @@ TODO: Put video here
 ![Soldering for sensor on fingertip](images/image3.jpg)
 ![Final Product](images/image4.jpg)
 
-# For more images and videos of the project's development and my trials and error with hardware/software :sweat_smile:, [click here!](images/README.md).
+### For more images and videos of the project's development and my debugging story with hardware/software 🤯, [click here!](images/README.md).
 
 ## How to Run
 
-1. **Set up hardware:**
-   - Connect the PCA9685 driver to the Raspberry Pi.
-   - Attach the servo motors to the robotic hand.
+1. **Build Robotic Arm:**
+   - You will need to 3D print the parts for the robotic hand and forearm. Follow the steps in the [InMoov Project](https://inmoov.fr/hand-and-forarm/) to assemble the robotic hand.
+2. **Set up Raspberry Pi:**
+   - Have a SD card with Raspberry Pi OS installed with SSH enabled (I advise using more than 16GB SD card).
+   - Install Python, OpenCV, adafruit libraries
+   - Enable I2C on the Raspberry Pi
+3. **Set up hardware:**
+   - Power the PCA9685 driver with the 5V power supply with minimum 20A current.
+   - Connect the PCA9685 driver to the Raspberry Pi and the servo motors from the robot arm
    - Connect the camera to the Raspberry Pi.
-2. **Install dependencies:**
+4. **Test your servos:**
+   - This will help you to understand the range of motion of your servos and how to control them so that you can adjust the code accordingly to calibrate the servos.
    ```bash
-   pip install opencv-python mediapipe adafruit-circuitpython-pca9685
+   python hand_servo_motor_test.py
    ```
-3. **Run the script:**
-   ```bash
-   python hand_tracking_control.py
-   ```
+5. **Run the main script:**
+    - Run the main script to start the hand tracking and control the robotic hand.
+    ```bash
+    python hand_tracking.py
+    ``` 
 
 ## Future Improvements
 
