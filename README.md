@@ -29,7 +29,7 @@ This project involves building and programming an **InMoov robotic hand and fore
 
 ## Circuit Diagram
 
-
+![circuit_diagram](images/circuit_diagram.png)
 
 ## How to Run
 
@@ -66,12 +66,10 @@ This project involves building and programming an **InMoov robotic hand and fore
 - **IoT Integration**: Control the hand remotely via the internet.
 - **Voice Commands**: Integrate speech recognition for combined voice and gesture control. (Maybe even have a rock paper scissor game)
 
+## Acknowledgments
+
+- Special thanks to the members of the [InMoov Discord Server](https://discord.gg/FKJ6GSEwHr) for their invaluable guidance and support throughout the project. Especially to hairygael who is the admin of the server and the creator of the InMoov project.
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-
-
-
-I was able to get a lot of help from the people within the discord server:
-https://discord.gg/FKJ6GSEwHr
