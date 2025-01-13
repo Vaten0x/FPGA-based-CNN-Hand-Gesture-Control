@@ -3,6 +3,8 @@ from board import SCL, SDA
 import busio
 from adafruit_pca9685 import PCA9685
 
+
+# This file will lift up the fingers of the robotic hand and then put it back to the original position one by one
 try:
     # Set up I2C communication
     i2c = busio.I2C(SCL, SDA)
