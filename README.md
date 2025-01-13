@@ -29,7 +29,7 @@ This project involves building and programming an **InMoov robotic hand and fore
 
 ## Circuit Diagram
 
-![circuit_diagram](images/circuit_diagram.png)
+![circuit_diagram](images/circuit_diagram.jpg)
 
 ## How to Run
 
@@ -50,11 +50,12 @@ This project involves building and programming an **InMoov robotic hand and fore
 
 ### Images
 
-1. **Servo Testing**:
+![3d Printed Parts](images/image1.jpg)
+![Assembling in process](images/image2.jpg)
+![Soldering for sensor on fingertip](images/image3.jpg)
+![Final Product](images/image4.jpg)
 
-2. **Hand Tracking**:
-
-3. **Full System**:
+For more images and videos of the project's development, [click here](images/README.md).
 
 ### Video
 
