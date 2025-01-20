@@ -36,7 +36,7 @@ This project involves building and programming an **InMoov robotic hand and fore
 - 🔋 **5V 30A 150W Power Supply**: Provides power to the PCA9685 driver and five servo motors, ensuring stable and sufficient current for operation.
 - 🧩 **PCA9685 Driver**: Controls up to 16 PWM signals for the servo motors.
 - 💪 **HK-15298 Servo Motors**: Five motors to control the fingers.
-- 📷 **Raspberry Pi HQ Camera**: Used to track hand movements.
+- 📷 **Raspberry Pi HQ Camera**: Used to track hand movements, mine includes with a 6mm IR Lens extended on it
 
 ### 💻 Software
 
@@ -67,6 +67,7 @@ This project involves building and programming an **InMoov robotic hand and fore
    - Have an SD card with Raspberry Pi OS installed with SSH enabled (I advise using more than 16GB SD card).
    - Install Python, OpenCV, Adafruit libraries.
    - Enable I2C on the Raspberry Pi.
+   - Have a camera for Raspberry Pi.
 3. ⚡ **Set up hardware:**
    - Power the PCA9685 driver with the 5V power supply with a minimum 20A current.
    - Connect the PCA9685 driver to the Raspberry Pi and the servo motors from the robotic arm.
@@ -74,12 +75,17 @@ This project involves building and programming an **InMoov robotic hand and fore
 4. 🔄 **Test your servos:**
    - This will help you understand the range of motion of your servos and how to control them so that you can adjust the code accordingly to calibrate the servos.
    ```bash
-   python hand_servo_motor_test.py
+   python test_servo_motor.py
    ```
-5. ▶️ **Run the main script:**
+5. ▶️ **Test your camera with hand detection:**
+   - This will help you understand the outputs of the camera and how to track the hand.
+   ```bash
+   python test_hand_tracking.py
+   ```
+6. ⏩ **Run the main script:**
     - Run the main script to start the hand tracking and control the robotic hand.
     ```bash
-    python hand_tracking.py
+    python move_robotic_hand.py
     ``` 
 
 ## 🚧 Future Improvements
