@@ -10,6 +10,10 @@ Use a USB webcam to capture hand gestures, recognize them with a trained CNN, ru
 
 ---
 
+## 🔌 Circuit Diagram
+
+![circuit_diagram](tasks/task1/images/circuit_diagram.jpg)
+
 ## 📁 Branching Structure
 
 Each task is being developed in its own branch:
@@ -35,7 +39,7 @@ The `main` branch will always reflect the **most up-to-date merged progress** fr
 ---
 
 ### 📸 Software Tasks
-- [ ] **Task 2 – Capture gesture images with PiCam (for initial testing)**  
+- [ ] **Task 2 – Capture gesture images with USB WebCam on Raspberry Pi 4**  
   Use OpenCV on Raspberry Pi to collect training images for different hand gestures. Store in class-labeled folders.
 
 - [ ] **Task 3 – Train CNN using Keras + TensorFlow**  
@@ -47,7 +51,7 @@ The `main` branch will always reflect the **most up-to-date merged progress** fr
 - [ ] **Task 5 – Run model on Raspberry Pi and get working predictions**  
   Use TFLite interpreter to load the model and run real-time inference using webcam input.
 
-- [ ] **Task 6 – Run model on ARM (DE1-SoC) with USB webcam and connect PCA9685 driver**  
+- [ ] **Task 6 – Run model on ARM (DE1-SoC) with USB WebCam and connect PCA9685 driver**  
   Use TFLite interpreter on ARM Linux (Cortex-A9) to perform gesture inference. Connect PCA9685 via I2C to drive servo motors based on predictions.
 
 - [ ] **Task 7 – Send prediction result to FPGA and control robotic hand**  
