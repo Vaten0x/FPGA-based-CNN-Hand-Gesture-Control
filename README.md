@@ -1,4 +1,4 @@
-# 🤖 InMoov AI Hand Robotic Project
+# 🤖 FPGA-based CNN Hand Gesture Control
 
 ## 📖 Table of Contents
 - [Overview](#-overview)
